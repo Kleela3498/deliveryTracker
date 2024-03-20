@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desi Kitchen Delivery Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Desi Kitchen Delivery Tracking</h1>
+    </header>
+    <form id="customerForm">
+        <input type="text" id="customerName" placeholder="Name of the Customer" required>
+        <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+        <input type="number" id="packets" placeholder="Number of Packets" required>
+        <input type="number" id="totalAmount" placeholder="Total Amount to be paid" required>
+        <select id="paymentMethod" required>
+            <option value="">Payment method</option>
+            <option value="Cash">Cash</option>
+            <option value="Card">Card</option>
+            <option value="Online">Online</option>
+        </select>
+        <input type="number" id="cashReceived" placeholder="Cash received" required>
+        <button type="submit">Add Record</button>
+    </form>
+    <div id="records"></div>
+    <button id="exportExcel">Export to Excel</button>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</body>
+</html>
